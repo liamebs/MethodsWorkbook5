@@ -11,14 +11,14 @@ public class MinMaxMethod2 {
         // determine if all three numbers are integers
         if (num1 == (int) num1 && num2 == (int) num2 && num3 == (int) num3) {
             // if all are integers, temporarily convert to integers using (int) and call methods
-            int max = calcMin((int) num1, (int) num2, (int) num3);
-            int min = calcMax((int) num1, (int) num2, (int) num3);
+            int min = calcMin((int) num1, (int) num2, (int) num3);
+            int max = calcMax((int) num1, (int) num2, (int) num3);
             System.out.println("\nMinimum value = " + min);
             System.out.println("Maximum value = " + max);
         } else {
             // if any inputs are doubles, simply call methods
-            double max = calcMin(num1, num2, num3);
-            double min = calcMax(num1, num2, num3);
+            double min = calcMin(num1, num2, num3);
+            double max = calcMax(num1, num2, num3);
             System.out.println("\nMinimum value = " + min);
             System.out.println("Maximum value = " + max);
         }
