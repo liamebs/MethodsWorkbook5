@@ -4,9 +4,9 @@ public class MinMaxMethod2 {
         Scanner askInput = new Scanner(System.in); // instantiate  scanner object 'askInput'
         // request three numbers and declare as doubles
         System.out.println("Enter three numbers: ");
-        double num1 = askInput.nextDouble();
-        double num2 = askInput.nextDouble();
-        double num3 = askInput.nextDouble();
+        double num1 = Double.parseDouble(askInput.next());
+        double num2 = Double.parseDouble(askInput.next());
+        double num3 = Double.parseDouble(askInput.next());
 
         // determine if all three numbers are integers
         if (num1 == (int) num1 && num2 == (int) num2 && num3 == (int) num3) {
