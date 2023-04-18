@@ -33,15 +33,15 @@ public class MyCalculator {
 
     public static void DivideNum(double num1, double num2) {
         double divide = num1 / num2;
-        System.out.println("\n" + num1 + " s/ " + num2 + " = " + divide);
+        System.out.println("\n" + num1 + " / " + num2 + " = " + divide);
 
     }
 
     public static double askNum() { // initialise askInt() with an double return value
         Scanner scanner = new Scanner(System.in); // instantiate Scanner object "scanner"
-        System.out.print("Enter a whole number: "); // request double
+        System.out.print("Enter a number: "); // request double
         while (!scanner.hasNextDouble()) { // create while loop to monitor input validity
-            System.out.print("Invalid input!  Please enter a whole number: "); // request re-input
+            System.out.print("Invalid input!  Please enter a number: "); // request re-input
             scanner.nextLine(); // consume invalid input to prevent infinite loop
         }
         double num = scanner.nextDouble(); // once while loop is breached, assign valid input to num variable
